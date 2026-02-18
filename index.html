@@ -95,15 +95,50 @@
         .back-to-top:hover {
             color: #3498db;
         }
-    </style>
+    
+/* Collapsible TOC styles */
+.toc {
+  background-color: #ecf0f1;
+  padding: 25px;
+  margin: 30px 0;
+  border-radius: 8px;
+  border-left: 5px solid #3498db;
+}
+.toc > summary {
+  list-style: none;
+  cursor: pointer;
+  color: #2c3e50;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  outline: none;
+}
+.toc > summary::marker { content: ""; }
+.toc > summary::-webkit-details-marker { display: none; }
+.toc > summary::before {
+  content: "▾";
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 150ms ease;
+  color: #3498db;
+}
+.toc[open] > summary::before { transform: rotate(0deg); }
+.toc:not([open]) > summary::before { transform: rotate(-90deg); }
+.toc ul { list-style: none; padding-left: 0; margin: 10px 0 0 0; }
+.toc li { margin: 10px 0; }
+.toc a { color: #2980b9; text-decoration: none; transition: color 0.2s; font-size: 1.1em; }
+.toc a:hover { color: #3498db; text-decoration: underline; }
+.toc > summary:focus-visible { box-shadow: 0 0 0 3px rgba(52,152,219,0.35); border-radius: 6px; }
+
+</style>
 </head>
 <body>
     <div class="container">
         <h1>"It's Turtles All the Way Down"</h1>
         <p><em>(or, why Copilot needs a hug)</em></p>
         
-        <div class="toc" id="toc">
-            <h2>Table of Contents</h2>
+        <details class="toc" id="toc" open>
+            <summary>Table of Contents</summary>
             <ul>
                 <li><a href="#introduction">INTRODUCTION</a></li>
                 <li><a href="#part-1">Part 1: EXPLORATION</a></li>
@@ -119,7 +154,7 @@
                 <li><a href="#part-11">Part 11: HILARIOUS CHAOS</a></li>
                 <li><a href="#part-12">Part 12: ROTFL MELTDOWN</a></li>
             </ul>
-        </div>
+        </details>
         
         <div id="content">
 <p>I ran a private symposium between five of the most advanced AI systems on Earth. </p>
