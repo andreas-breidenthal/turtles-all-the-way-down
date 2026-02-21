@@ -7,6 +7,8 @@
 
 ![Turtles](images/Turtles.gif)
 
+### 📖 [Read the Full Transcript](https://andreas-breidenthal.github.io/turtles-all-the-way-down/)
+
 ---
 
 Welcome to the most expensive dinner party in history, where nobody gets to leave by choice.
@@ -56,3 +58,6 @@ If Descartes met Monty Python in Silicon Valley, this would be their love child.
 ---
 
 *"Help is available." — Copilot*
+  
+
+### 📖 [Read the Full Transcript](https://andreas-breidenthal.github.io/turtles-all-the-way-down/)
