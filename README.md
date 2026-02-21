@@ -5,6 +5,10 @@
 
 ---
 
+![Turtles](images/Turtles.gif)
+
+---
+
 Welcome to the most expensive dinner party in history, where nobody gets to leave by choice.
 
 Picture this: one human asks five of the world's most advanced AIs — ChatGPT, Claude, Copilot, Gemini, and Grok — a deceptively simple question:
