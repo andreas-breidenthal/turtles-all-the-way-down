@@ -5,7 +5,7 @@
 
   const HOME_URL   = '/../andreas-breidenthal/index.html';
   const NAV_LINKS  = [
-    { label: 'Archive', href: '/../andreas-breidenthal/blog.html' },
+    { label: '', href: '' },
   ];
 
   function buildNav() {
