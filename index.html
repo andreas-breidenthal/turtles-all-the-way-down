@@ -4,7 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"It's Turtles All the Way Down"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Inconsolata&display=swap" rel="stylesheet">
     <style>
+/* ── SITE NAV ── */
+#site-nav header {
+  border-bottom: 1px solid #c8bda8;
+  padding: 2.5rem 4vw 2rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: #f4efe6;
+}
+#site-nav .site-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: #1a1410;
+  text-decoration: none;
+}
+#site-nav .site-name span { color: #8b3a2a; }
+#site-nav nav {
+  display: flex;
+  gap: 2rem;
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+#site-nav nav a { color: #7a6e5f; text-decoration: none; transition: color 0.2s; }
+#site-nav nav a:hover, #site-nav nav a.active { color: #8b3a2a; }
+@media (max-width: 480px) {
+  #site-nav header { flex-direction: column; gap: 1rem; }
+  #site-nav nav { gap: 1.2rem; }
+}
+
         body {
             font-family: Georgia, 'Times New Roman', serif;
             line-height: 1.6;
